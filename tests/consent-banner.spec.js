@@ -30,7 +30,7 @@ test.describe("Consent Banner Behavior", () => {
     const detailsTab = page.locator(
       '[class="gravitoPROCMP-GCMP-layer1-container"]'
     );
-    await expect(detailsTab).toBeHidden();
+    await expect(detailsTab).toBeVisible();
   });
 
   // test("should check the number of purposes in the details tab is equal to 5", async ({
@@ -50,4 +50,9 @@ test.describe("Consent Banner Behavior", () => {
   //     .count();
   //   expect(purposeCount).toBe(5);
   // });
+
+  test("this test should always fail", async ({ page }) => {
+    // this test should always fail
+    expect(true).toBe(false);
+  });
 });
